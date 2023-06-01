@@ -40,13 +40,11 @@ export const ModelSelect = () => {
         >
           {models.map((model) => (
             <option
-              key={model.id}
-              value={model.id}
+              key="datou-gpt-1"
+              value="datou-gpt-1"
               className="dark:bg-[#343541] dark:text-white"
             >
-              {model.id === defaultModelId
-                ? `Default (${model.name})`
-                : model.name}
+              DatouGPT-1.0
             </option>
           ))}
         </select>
