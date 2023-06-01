@@ -16,7 +16,7 @@ export const cleanSelectedConversation = (conversation: Conversation) => {
   if (!updatedConversation.model) {
     updatedConversation = {
       ...updatedConversation,
-      model: updatedConversation.model || OpenAIModels[OpenAIModelID.BIG_HEAD_GPT_1],
+      model: updatedConversation.model || OpenAIModels[OpenAIModelID.DATOU_GPT_1],
     };
   }
 
@@ -67,7 +67,7 @@ export const cleanConversationHistory = (history: any[]): Conversation[] => {
   return history.reduce((acc: any[], conversation) => {
     try {
       if (!conversation.model) {
-        conversation.model = OpenAIModels[OpenAIModelID.BIG_HEAD_GPT_1];
+        conversation.model = OpenAIModels[OpenAIModelID.DATOU_GPT_1];
       }
 
       if (!conversation.prompt) {
