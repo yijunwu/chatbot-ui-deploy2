@@ -35,7 +35,7 @@ export const ModelSelect = () => {
         <select
           className="w-full bg-transparent p-2"
           placeholder={t('Select a model') || ''}
-          value={selectedConversation?.model?.id || defaultModelId}
+          value={selectedConversation?.model?.id || 'datou-gpt-1' || defaultModelId}
           onChange={handleChange}
         >
           {models.map((model) => (
